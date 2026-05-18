@@ -1,7 +1,7 @@
 
 import ballerina/mcp;
 
-listener mcp:Listener mcpListener = new (9091;
+listener mcp:Listener mcpListener = new (9091);
 
 @mcp:ServiceConfig {
     info: {
