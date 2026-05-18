@@ -1,6 +1,5 @@
 
 import ballerina/mcp;
-import ballerina/io;
 
 listener mcp:Listener mcpListener = new (9091);
 
