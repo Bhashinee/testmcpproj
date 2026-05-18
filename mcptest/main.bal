@@ -2,8 +2,6 @@
 import ballerina/mcp;
 import ballerina/io;
 
-configurable string x = ?;
-
 listener mcp:Listener mcpListener = new (9091);
 
 @mcp:ServiceConfig {
