@@ -1,5 +1,8 @@
 
 import ballerina/mcp;
+import ballerina/io;
+
+configurable string x = ?;
 
 listener mcp:Listener mcpListener = new (9091);
 
@@ -13,6 +16,7 @@ listener mcp:Listener mcpListener = new (9091);
 service mcp:Service /mcp on mcpListener {
     @mcp:Tool
     remote function add(int a, int b) returns int {
+        io:println(x);
         return a + b;
     }
 }
