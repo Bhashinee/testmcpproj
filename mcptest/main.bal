@@ -14,7 +14,6 @@ listener mcp:Listener mcpListener = new (9091);
 service mcp:Service /mcp on mcpListener {
     @mcp:Tool
     remote function add(int a, int b) returns int {
-        io:println(x);
         return a + b;
     }
 }
